@@ -14,6 +14,7 @@ data_nat_min=np.load("2018-08-24_naturalgradient_KL_error_min.npy")
 data_euc_min=np.load("2018-08-24_euclideangradient_KL_error_min.npy")
 data_nat_max=np.load("2018-08-24_naturalgradient_KL_error_max.npy")
 data_euc_max=np.load("2018-08-24_euclideangradient_KL_error_max.npy")
+#data_approx=np.load("2018-08-24_approxgradient_KL_error.npy")
 data_time=np.arange(0.,81.,1.)*100./60.
 
 
@@ -30,6 +31,7 @@ ax.set_yscale('log')
 
 ax.semilogy(data_time,data_euc,color="darkblue",linewidth=2.)
 ax.semilogy(data_time,data_nat,color="indianred",linewidth=2.)
+ax.semilogy(data_time,data_approx,color="orange",linewidth=2.)
 
 fig=plt.figure(1)
 ax=plt.axes()
