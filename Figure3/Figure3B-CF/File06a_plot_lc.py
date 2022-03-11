@@ -31,7 +31,7 @@ ax.set_yscale('log')
 
 ax.semilogy(data_time,data_euc,color="darkblue",linewidth=2.)
 ax.semilogy(data_time,data_nat,color="indianred",linewidth=2.)
-ax.semilogy(data_time,data_approx,color="orange",linewidth=2.)
+#ax.semilogy(data_time,data_approx,color="orange",linewidth=2.)
 
 fig=plt.figure(1)
 ax=plt.axes()
